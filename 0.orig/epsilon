@@ -21,41 +21,13 @@ internalField   uniform 0.01;
 boundaryField
 {
     #includeEtc "caseDicts/setConstraintTypes"
-    ofen_walls
+    ".*"
     {
         type            epsilonWallFunction;
         value           uniform 0.01;
     }
 
-    keksen
-    {
-        type            epsilonWallFunction;
-        value           uniform 0.01;
-    }
-
-    hot_wall
-    {
-        type            epsilonWallFunction;
-        value           uniform 0.01;
-    }
-
-    trays
-    {
-        type            epsilonWallFunction;
-        value           uniform 0.01;
-    }
     
-    glass
-    {
-        type            epsilonWallFunction;
-        value           uniform 0.01;
-    }
-    
-    fan
-    {
-        type            epsilonWallFunction;
-        value           uniform 0.01;
-    }
 }
 
 

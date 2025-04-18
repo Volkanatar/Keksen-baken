@@ -21,31 +21,7 @@ internalField   uniform 1e5;
 boundaryField
 {
 	#includeEtc "caseDicts/setConstraintTypes"
-    ofen_walls
-    {
-        type            calculated;
-        value           $internalField;
-    }
-
-    keksen
-    {
-        type            calculated;
-        value           $internalField;
-    }
-
-    hot_wall
-    {
-        type            calculated;
-        value           $internalField;
-    }
-    
-    glass
-    {
-        type            calculated;
-        value           $internalField;
-    }
-    
-    trays
+    ".*"
     {
         type            calculated;
         value           $internalField;

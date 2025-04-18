@@ -21,35 +21,11 @@ internalField   uniform 1e5;
 boundaryField
 {
 	#includeEtc "caseDicts/setConstraintTypes"
-    ofen_walls
+    ".*"
     {
         type            fixedFluxPressure;
-        value           uniform 1e5;
+        value           $internalField;
     }
-
-    keksen
-    {
-        type            fixedFluxPressure;
-        value           uniform 1e5;
-    }
-
-    hot_wall
-   {
-    type            fixedFluxPressure;
-    value           uniform 1e5;
-   }
-
-glass
-{
-    type            fixedFluxPressure;
-    value           uniform 1e5;
-}
-
-trays
-{
-    type            fixedFluxPressure;
-    value           uniform 1e5;
-}
 
 fan
 {

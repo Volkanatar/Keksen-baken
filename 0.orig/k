@@ -20,41 +20,13 @@ internalField   uniform 0.1;
 
 boundaryField
 {
-    ofen_walls
+    ".*"
     {
         type            kqRWallFunction;
         value           uniform 0.1;
     }
 
-    keksen
-    {
-        type            kqRWallFunction;
-        value           uniform 0.1;
-    }
-
-    hot_wall
-    {
-        type            kqRWallFunction;
-        value           uniform 0.1;
-    }
-
-    trays
-    {
-        type            kqRWallFunction;
-        value           uniform 0.1;
-    }
-    
-    glass
-    {
-        type            kqRWallFunction;
-        value           uniform 0.1;
-    }
-    
-    fan
-    {
-        type            kqRWallFunction;
-        value           uniform 0.1;
-    }
+   
 }
 
 

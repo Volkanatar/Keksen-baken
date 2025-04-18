@@ -20,41 +20,13 @@ internalField   uniform 0;
 
 boundaryField
 {
-    ofen_walls
+    ".*"
     {
         type            compressible::alphatWallFunction;
         value           uniform 0;
     }
 
-    keksen
-    {
-        type            compressible::alphatWallFunction;
-        value           uniform 0;
-    }
-
-    hot_wall
-    {
-        type            compressible::alphatWallFunction;
-        value           uniform 0;
-    }
-
-    glass
-    {
-        type            compressible::alphatWallFunction;
-        value           uniform 0;
-    }
     
-    trays
-    {
-        type            compressible::alphatWallFunction;
-        value           uniform 0;
-    }
-    
-    fan
-    {
-        type            compressible::alphatWallFunction;
-        value           uniform 0;
-    }
 }
 
 

@@ -20,7 +20,7 @@ internalField   uniform 453;
 
 boundaryField
 {
-    ofen_walls
+    "(ofen_walls | trays | glass | fan)"
     {
         type            fixedValue;
         value           uniform 373;
@@ -45,24 +45,6 @@ keksen
 {
     type            fixedValue;
     value           uniform 473;
-}
-
-glass
-{
-    type            fixedValue;
-        value           uniform 373;
-}
-
-trays
-{
-    type            fixedValue;
-        value           uniform 373;
-}
-
-fan
-{
-    type            fixedValue;
-        value           uniform 373;
 }
 
 

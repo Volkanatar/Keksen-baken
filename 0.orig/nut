@@ -21,42 +21,11 @@ internalField   uniform 0;
 boundaryField
 {
 
-    ofen_walls
+    ".*"
     {
         type            nutkWallFunction;
         value           uniform 0;
     }
-
-    hot_wall
-    {
-        type            nutkWallFunction;
-        value           uniform 0;
-    }
-
-keksen
-{
-    type            nutkWallFunction;
-        value           uniform 0;
-}
-
-trays
-{
-    type            nutkWallFunction;
-        value           uniform 0;
-}
-
-glass
-{
-    type            nutkWallFunction;
-        value           uniform 0;
-}
-
-fan
-{
-    type            nutkWallFunction;
-        value           uniform 0;
-}
-
 
 }
 
